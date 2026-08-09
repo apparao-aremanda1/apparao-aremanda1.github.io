@@ -1,119 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PingScout | AI Web Scraping & Document Processing</title>
+    <title>PingScout | Intelligent AI Engineering & Agentic Data Extraction</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Inter', sans-serif; background-color: #020617; }
+        h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; }
+        /* Glowing Gradient Text */
+        .ai-gradient-text {
+            background-image: linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #f472b6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* AI-Neural Grid Background Pattern */
+        .ai-grid-pattern {
+            background-image: linear-gradient(#0f172a 1.5px, transparent 1.5px), linear-gradient(90deg, #0f172a 1.5px, transparent 1.5px);
+            background-size: 50px 50px;
+            background-position: center;
+        }
+        /* Subtle Glow Animation for placeholders */
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 15px 1px rgba(96, 165, 250, 0.2); }
+            50% { box-shadow: 0 0 25px 4px rgba(167, 139, 250, 0.3); }
+        }
+        .ai-glowing-graphic {
+            animation: pulse-glow 4s ease-in-out infinite;
+        }
     </style>
 </head>
-<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col justify-between antialiased">
+<body class="text-slate-200 antialiased min-h-screen ai-grid-pattern">
 
     <!-- Header / Navbar -->
-    <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
-                <span class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-400">
-                    PingScout<span class="text-blue-500">.ai</span>
+                <span class="text-2xl font-bold ai-gradient-text">
+                    PingScout<span class="text-blue-500 font-normal">.ai</span>
                 </span>
             </div>
-            <a href="#request-form" class="bg-blue-600 hover:bg-blue-500 text-white font-medium px-4 py-2 rounded-lg text-sm transition-all">
-                Request Automation
+            <a href="#request-form" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-4 py-2 rounded-lg text-sm transition-all shadow-md shadow-blue-900/30">
+                Engage AI Engineering
             </a>
         </div>
     </header>
 
     <!-- Main Content Container -->
-    <main class="max-w-4xl mx-auto px-6 py-12 md:py-20 flex-grow">
+    <main class="max-w-7xl mx-auto px-6 py-12 md:py-16">
         
-        <!-- Hero Section -->
-        <section class="text-center mb-16">
-            <div class="inline-block px-3 py-1 bg-blue-500/10 border border-blue-500/20 rounded-full text-blue-400 text-xs font-semibold uppercase tracking-wider mb-4">
-                Asynchronous AI Engineering Studio
+        <!-- Hero Section with AI Visual -->
+        <section class="flex flex-col md:flex-row items-center justify-between gap-12 mb-20 md:mb-24">
+            <!-- Left Text Content -->
+            <div class="flex-1 md:max-w-2xl text-center md:text-left">
+                <div class="inline-block px-3 py-1 bg-violet-500/10 border border-violet-500/20 rounded-full text-violet-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                    Specialized Intelligent Agentics Studio
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                    We Build Intelligent <span class="ai-gradient-text">Agentic Engines</span> to Scout and Process the Web
+                </h1>
+                <p class="text-lg text-slate-400 mb-10 leading-relaxed">
+                    Move beyond simple scrapers. We deploy advanced AI agents that semisyncronously navigate complex portals, utilize computer vision for layout-aware PDF analysis, and deliver LLM-powered alerts directly to your business flow.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+                    <a href="#live-demo" class="w-full sm:w-auto bg-green-600 hover:bg-green-500 text-white font-semibold px-6 py-3.5 rounded-xl shadow-lg shadow-green-900/40 transition-all flex items-center justify-center space-x-2 text-md">
+                        <span>Deploy GO-Tracker Bot</span>
+                    </a>
+                    <a href="#request-form" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold px-6 py-3.5 rounded-xl transition-all">
+                        Submit AI Requirements
+                    </a>
+                </div>
             </div>
-            <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight mb-6">
-                Turn Messy Portals & PDFs into <span class="text-blue-400">Real-Time Actionable Alerts</span>
-            </h1>
-            <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-8">
-                We build automated backend engines that monitor complex websites, parse unstructured PDFs, and deliver structured JSON or instant WhatsApp & Email notifications.
-            </p>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#live-demo" class="w-full sm:w-auto bg-green-600 hover:bg-green-500 text-white font-semibold px-6 py-3 rounded-lg shadow-lg shadow-green-900/20 transition-all flex items-center justify-center space-x-2">
-                    <span>Try Free WhatsApp Bot</span>
-                </a>
-                <a href="#request-form" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold px-6 py-3 rounded-lg transition-all">
-                    Submit Custom Request
-                </a>
+
+            <!-- Right: AI Engineering Visual Placeholder -->
+            <!-- REPLACE THIS WITH A REAL GRAPHIC E.G. OF A NEURAL NETWORK MESH OR AGENT INTERFACE -->
+            <div class="flex-1 max-w-sm md:max-w-md aspect-square bg-slate-800/40 border border-slate-700/60 rounded-3xl ai-glowing-graphic flex items-center justify-center p-8 text-center text-slate-500 relative">
+                <div class="absolute inset-4 rounded-2xl bg-gradient-to-br from-blue-900/30 to-violet-900/30 opacity-50"></div>
+                <div class="z-10">
+                    <img src="https://via.placeholder.com/400?text=AI+Agentic+Visualization" alt="AI Agent Visualization Placeholder" class="max-w-full h-auto rounded-lg opacity-80" />
+                    <p class="text-xs mt-4">[Placeholder: AI Agent, Neural Mesh, or Knowledge Graph Visual]</p>
+                </div>
             </div>
         </section>
 
         <!-- Live Demo / Utility Showcase -->
-        <section id="live-demo" class="mb-16 bg-slate-800/60 border border-slate-700/60 rounded-2xl p-6 md:p-8 backdrop-blur">
-            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-                <div>
-                    <div class="flex items-center space-x-2 mb-2">
-                        <span class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></span>
-                        <h2 class="text-xl font-bold text-white">Live Showcase: Govt Order (GO) Tracker</h2>
+        <section id="live-demo" class="mb-20 bg-slate-800/60 border border-slate-700/60 rounded-3xl p-8 backdrop-blur">
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+                <div class="flex-grow">
+                    <div class="flex items-center space-x-3 mb-3">
+                        <span class="w-3.5 h-3.5 bg-green-500 rounded-full animate-pulse shadow-lg shadow-green-500/50"></span>
+                        <h2 class="text-2xl font-bold text-white tracking-tight">Active Deployment: Govt Order (GO) Intelligence Tracker</h2>
                     </div>
-                    <p class="text-slate-300 text-sm max-w-xl">
-                        Our automated engine continuously scans AP & Telangana Government Order portals, extracts key actionable details using LLMs, and pushes instant local-language summaries directly to WhatsApp.
+                    <p class="text-slate-300 text-md max-w-3xl leading-relaxed mb-4">
+                        This bot doesn't just scrape; it *understands*. Our engine semanticallly scans the AP & Telangana Government Order portals, extracts critical parameters, analyzes context via Large Language Models (LLMs), and pushes instant local-language summaries directly to your WhatsApp.
                     </p>
+                    <div class="flex flex-wrap gap-2 text-xs font-mono text-blue-300">
+                        <span class="px-2 py-0.5 bg-slate-700 rounded-md border border-slate-600">Contextual Parsing</span>
+                        <span class="px-2 py-0.5 bg-slate-700 rounded-md border border-slate-600">LLM Summarization</span>
+                        <span class="px-2 py-0.5 bg-slate-700 rounded-md border border-slate-600">WhatsApp API Routing</span>
+                    </div>
                 </div>
-                <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank" class="whitespace-nowrap bg-green-600 hover:bg-green-500 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition-all flex items-center space-x-2">
+                <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank" class="whitespace-nowrap bg-green-600 hover:bg-green-500 text-white font-semibold px-6 py-3.5 rounded-xl text-md transition-all flex items-center space-x-2 shadow-lg shadow-green-900/30">
                     <span>Message WhatsApp Bot</span>
                 </a>
             </div>
         </section>
 
-        <!-- Off-the-Shelf & Custom Services -->
-        <section class="mb-16">
-            <h2 class="text-2xl font-bold text-white mb-6 text-center">Automation Capabilities</h2>
-            <div class="grid md:grid-cols-3 gap-6">
+        <!-- The AI Authority Layer (Technical Depth) -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold text-white mb-8 text-center tracking-tight">Our Intelligent Core</h2>
+            <p class="text-slate-400 text-center max-w-2xl mx-auto mb-12">We integrate distinct AI sub-fields to build unified, production-ready intelligent agentic pipelines.</p>
+            <div class="grid md:grid-cols-4 gap-6">
                 
-                <div class="bg-slate-800/40 border border-slate-700/50 p-6 rounded-xl">
-                    <div class="w-10 h-10 bg-blue-500/10 text-blue-400 rounded-lg flex items-center justify-center font-bold text-lg mb-4">01</div>
-                    <h3 class="text-lg font-semibold text-white mb-2">Tender & GO Tracking</h3>
-                    <p class="text-slate-400 text-sm">Automated monitoring of eProcurement (CPPP) and state portals with instant keyword-matched alerts.</p>
+                <!-- AI capability 1 -->
+                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl">
+                    <img src="https://via.placeholder.com/50?text=LLM" alt="LLM Icon Placeholder" class="w-12 h-12 mb-4" />
+                    <h3 class="text-lg font-semibold text-white mb-2">Natural Language Understanding (NLU)</h3>
+                    <p class="text-slate-400 text-sm">Large Language Models analyze the semantic intent of complex documents, GOs, and tender texts, understanding context beyond basic keyword searching.</p>
+                </div>
+                
+                <!-- AI capability 2 -->
+                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl">
+                    <img src="https://via.placeholder.com/50?text=VISION" alt="Computer Vision Icon Placeholder" class="w-12 h-12 mb-4" />
+                    <h3 class="text-lg font-semibold text-white mb-2">Computer Vision & Layout OCR</h3>
+                    <p class="text-slate-400 text-sm">We use intelligent spatial analysis to read unstructured PDFs, recognizing table layouts, form fields, and hierarchical structures as a human would.</p>
                 </div>
 
-                <div class="bg-slate-800/40 border border-slate-700/50 p-6 rounded-xl">
-                    <div class="w-10 h-10 bg-indigo-500/10 text-indigo-400 rounded-lg flex items-center justify-center font-bold text-lg mb-4">02</div>
-                    <h3 class="text-lg font-semibold text-white mb-2">Unstructured PDF Parsing</h3>
-                    <p class="text-slate-400 text-sm">Extract financial metrics, legal clauses, and line items from complex PDF documents into structured JSON or Excel.</p>
+                <!-- AI capability 3 -->
+                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl">
+                    <img src="https://via.placeholder.com/50?text=AGENT" alt="Agent Icon Placeholder" class="w-12 h-12 mb-4" />
+                    <h3 class="text-lg font-semibold text-white mb-2">Agentic Navigation Agents</h3>
+                    <p class="text-slate-400 text-sm">Our software agents intelligently navigate multi-step dynamic forms, handle CAPTCHAs, and traverse nested portal structures to fetch inaccessible data.</p>
                 </div>
 
-                <div class="bg-slate-800/40 border border-slate-700/50 p-6 rounded-xl">
-                    <div class="w-10 h-10 bg-purple-500/10 text-purple-400 rounded-lg flex items-center justify-center font-bold text-lg mb-4">03</div>
-                    <h3 class="text-lg font-semibold text-white mb-2">Web Scraping & APIs</h3>
-                    <p class="text-slate-400 text-sm">Continuous website scraping, rate monitoring, and automated API integration directly into your internal tools.</p>
+                <!-- AI capability 4 -->
+                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl">
+                    <img src="https://via.placeholder.com/50?text=GEN" alt="Generative AI Icon Placeholder" class="w-12 h-12 mb-4" />
+                    <h3 class="text-lg font-semibold text-white mb-2">Generative Multilingual Summary</h3>
+                    <p class="text-slate-400 text-sm">Deploying fine-tuned LLMs for automated generation of concise multilingual summaries (Telugu, Hindi, English) for WhatsApp and Email alerts.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Automation Capabilities (Upgraded Icons/Text) -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold text-white mb-10 text-center tracking-tight">AI Deployment Models</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-slate-900/60 border border-slate-800 p-8 rounded-2xl group hover:border-blue-500/40 transition-colors">
+                    <div class="w-16 h-16 bg-blue-500/10 text-blue-400 rounded-xl flex items-center justify-center font-bold text-lg mb-6 group-hover:scale-105 transition-transform">
+                        <img src="https://via.placeholder.com/64?text=TENDER" alt="Tender Icon Placeholder" class="w-12 h-12 opacity-80" />
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Tender & GO Intelligence</h3>
+                    <p class="text-slate-400 text-md">AI-Matched semantic search across state portals and CPPP, pushing deep summaries based on your precise business signals.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-900/60 border border-slate-800 p-8 rounded-2xl group hover:border-violet-500/40 transition-colors">
+                    <div class="w-16 h-16 bg-violet-500/10 text-violet-400 rounded-xl flex items-center justify-center font-bold text-lg mb-6 group-hover:scale-105 transition-transform">
+                        <img src="https://via.placeholder.com/64?text=PDF" alt="PDF Icon Placeholder" class="w-12 h-12 opacity-80" />
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Intelligent PDF Parsing</h3>
+                    <p class="text-slate-400 text-md">Utilizing deep layout analysis and LLMs to extract financial metrics, legal clauses, and line items from complex unstructured documents into JSON or Excel.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900/60 border border-slate-800 p-8 rounded-2xl group hover:border-pink-500/40 transition-colors">
+                    <div class="w-16 h-16 bg-pink-500/10 text-pink-400 rounded-xl flex items-center justify-center font-bold text-lg mb-6 group-hover:scale-105 transition-transform">
+                        <img src="https://via.placeholder.com/64?text=API" alt="API Icon Placeholder" class="w-12 h-12 opacity-80" />
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Custom AI Agents & APIs</h3>
+                    <p class="text-slate-400 text-md">Continuous monitoring agents, spatial scraping pipelines, and automated LLM API integrations built for production-grade reliability.</p>
                 </div>
 
             </div>
         </section>
 
         <!-- Asynchronous Request Form -->
-        <section id="request-form" class="bg-gradient-to-br from-blue-900/30 to-slate-800/80 border border-blue-500/30 rounded-2xl p-6 md:p-10 text-center">
-            <h2 class="text-2xl font-bold text-white mb-3">Need a Custom Automation Built?</h2>
-            <p class="text-slate-300 text-sm max-w-xl mx-auto mb-6">
-                We operate strictly 100% asynchronously to keep overhead low, deliver production-ready code faster, and eliminate time-wasting sales meetings.
+        <section id="request-form" class="bg-gradient-to-br from-blue-950 to-slate-900 border-2 border-blue-500/40 rounded-3xl p-8 md:p-12 text-center ai-glowing-graphic">
+            <h2 class="text-3xl font-bold text-white mb-4 tracking-tight">Need a Specialized Agent Built?</h2>
+            <p class="text-slate-300 text-md max-w-2xl mx-auto mb-8 leading-relaxed">
+                We operate strictly 100% asynchronously via technical documentation to eliminate time-wasting sales meetings, keep overhead low, and deliver production-ready AI code faster.
             </p>
-            <a href="YOUR_GOOGLE_FORM_OR_TYPEFORM_LINK" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-3.5 rounded-lg shadow-lg shadow-blue-600/30 transition-all">
-                Submit Project Requirements
+            <a href="YOUR_GOOGLE_FORM_OR_TYPEFORM_LINK" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-500 text-white font-semibold px-10 py-4 rounded-xl shadow-xl shadow-blue-600/40 transition-all text-md">
+                Submit AI Project Requirements
             </a>
-            <p class="text-xs text-slate-400 mt-4">You will receive a detailed technical breakdown and fixed quote via email within 24 hours.</p>
+            <p class="text-xs text-slate-400 mt-6 font-mono">You will receive a detailed technical breakdown and fixed quote via email within 24 hours.</p>
         </section>
 
     </main>
 
     <!-- Footer -->
-    <footer class="border-t border-slate-800 py-6 text-center text-xs text-slate-500">
-        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p>&copy; 2026 PingScout. All rights reserved.</p>
+    <footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-500 bg-slate-950/80 backdrop-blur">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 PingScout Engineering. Specialist Data Agentics Studio.</p>
             <div class="space-x-4">
                 <a href="privacy.html" class="hover:text-slate-300 underline transition-colors">Privacy Policy</a>
             </div>
