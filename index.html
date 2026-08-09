@@ -76,15 +76,14 @@
             </div>
 
             <!-- Right: AI Engineering Visual Placeholder -->
-            <!-- REPLACE THIS WITH A REAL GRAPHIC E.G. OF A NEURAL NETWORK MESH OR AGENT INTERFACE -->
-            <div class="flex-1 max-w-sm md:max-w-md aspect-square bg-slate-800/40 border border-slate-700/60 rounded-3xl ai-glowing-graphic flex items-center justify-center p-8 text-center text-slate-500 relative">
-                <div class="absolute inset-4 rounded-2xl bg-gradient-to-br from-blue-900/30 to-violet-900/30 opacity-50"></div>
-                <div class="z-10">
-                    <img src="hero-graphic.png" alt="AI Agent Visualization Placeholder" class="max-w-full h-auto rounded-lg opacity-80" />
-                    <p class="text-xs mt-4">[Placeholder: AI Agent, Neural Mesh, or Knowledge Graph Visual]</p>
-                </div>
+            <div class="flex-1 w-full max-w-xl relative rounded-3xl border border-slate-700/60 ai-glowing-graphic overflow-hidden shadow-2xl shadow-blue-900/20">
+                <!-- Subtle gradient overlay so the image blends perfectly with the dark background -->
+                <div class="absolute inset-0 bg-gradient-to-tr from-[#020617]/40 to-transparent pointer-events-none z-10"></div>
+                
+                <!-- IMPORTANT: Put your actual image file name in the src="" below -->
+                <img src="YOUR_IMAGE_FILE.jpg" alt="AI Engineering Visualization" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700 ease-in-out" />
             </div>
-        </section>
+    </section>
 
         <!-- Live Demo / Utility Showcase -->
         <section id="live-demo" class="mb-20 bg-slate-800/60 border border-slate-700/60 rounded-3xl p-8 backdrop-blur">
